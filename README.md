@@ -9,5 +9,3 @@
   * -jade       --模板生成  
   * -publish    --最终发布的文件    
   * -src        --源代码  
-   * -js
-   * -java
