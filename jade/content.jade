@@ -1,7 +1,7 @@
 doctype html
 html
    head
-     title 哈哈优选
+     title #{name}
      meta(charset="UTF-8")
      meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
 
@@ -13,39 +13,28 @@ html
      div.container-fluid
          div.row.item_reply
              div.col-xs-3
-                 img.avatar.img-rounded.img_size_1(src="image/logo.jpg")
+                 img.avatar.img-rounded.img_size_1(src="#{icon.image}")
                  br
-                 img.avatar.img-rounded.img_size_1(src="image/qr.jpg")
+                 img.avatar.img-rounded.img_size_1(src="#{qrcode.image}")
              div.col-xs-9.pdl0
                  div.col-xs-12.blank10
                  //小程序名
-                 b.col-xs-12.text-center 小明事务所
+                 b.col-xs-12.text-center #{name}
                  div.col-xs-12.blank10
                  //小程序简介
-                 div.col-xs-12.text-justify 小明律师事务所免费法律咨询小程序，由小明律师免费为您解决一切法律问题。
+                 div.col-xs-12.text-justify #{description}
                  div.col-xs-12.blank10
                      //这里每一个图放一个@duck
-                     //each it, i in item
-                     //   option(value=i) Book #{it}
-                     div.col-xs-6.descpic.text-center
-                         img.img_size_1(src="image/p1.jpg")
-                     div.col-xs-6.descpic.text-center
-                         img.img_size_1(src="image/p2.jpg")
-                     div.col-xs-6.descpic.text-center
-                         img.img_size_1(src="image/p1.jpg")
-                     div.col-xs-6.descpic.text-center
-                         img.img_size_1(src="image/p2.jpg")
+                     each i in screenshot
+                        div.col-xs-6.descpic.text-center
+                            img.img_size_1(src="#{i.image}")
                  div.col-xs-12.my_local
                      //这里代表一个类别@duck
-                     span.my_tag.pdl0.text-left 生活
-                     span.my_tag.pdl0.text-left 餐饮
-                     span.my_tag.pdl0.text-left 文化
-                     span.my_tag.pdl0.text-left 工具
-                 div.col-xs-12.blank10
-                 div.col-xs-4.readed 人气548
+                     each i in tag
+                        span.my_tag.pdl0.text-left #{i.name}
                  div.col-xs-12.blank10
          div.col-xs-12
-             img.img-rounded.img_size_1(src="image/qr.jpg")
+             img.img-rounded.img_size_1(src="#{qrcode.image}")
      //弹窗
      div.modal.fade(id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
          div.modal-dialog(role="document")
