@@ -1,0 +1,72 @@
+doctype html
+html
+   head
+     title 哈哈优选
+     meta(charset="UTF-8")
+     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+
+     //Bootstrap
+     link(href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet")
+     link(href="style/css.css" rel="stylesheet")
+     link(href="style/m2.css" rel="stylesheet")
+   body
+     div.container-fluid
+         div.row.item_reply
+             div.col-xs-3
+                 img.avatar.img-rounded.img_size_1(src="image/logo.jpg")
+                 br
+                 img.avatar.img-rounded.img_size_1(src="image/qr.jpg")
+             div.col-xs-9.pdl0
+                 div.col-xs-12.blank10
+                 //小程序名
+                 b.col-xs-12.text-center 小明事务所
+                 div.col-xs-12.blank10
+                 //小程序简介
+                 div.col-xs-12.text-justify 小明律师事务所免费法律咨询小程序，由小明律师免费为您解决一切法律问题。
+                 div.col-xs-12.blank10
+                     //这里每一个图放一个@duck
+                     //each it, i in item
+                     //   option(value=i) Book #{it}
+                     div.col-xs-6.descpic.text-center
+                         img.img_size_1(src="image/p1.jpg")
+                     div.col-xs-6.descpic.text-center
+                         img.img_size_1(src="image/p2.jpg")
+                     div.col-xs-6.descpic.text-center
+                         img.img_size_1(src="image/p1.jpg")
+                     div.col-xs-6.descpic.text-center
+                         img.img_size_1(src="image/p2.jpg")
+                 div.col-xs-12.my_local
+                     //这里代表一个类别@duck
+                     span.my_tag.pdl0.text-left 生活
+                     span.my_tag.pdl0.text-left 餐饮
+                     span.my_tag.pdl0.text-left 文化
+                     span.my_tag.pdl0.text-left 工具
+                 div.col-xs-12.blank10
+                 div.col-xs-4.readed 人气548
+                 div.col-xs-12.blank10
+         div.col-xs-12
+             img.img-rounded.img_size_1(src="image/qr.jpg")
+     //弹窗
+     div.modal.fade(id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+         div.modal-dialog(role="document")
+             div.modal-content
+                 div.modal-header.text-center
+                     button.close(type="button" data-dismiss="modal" aria-label="Close")
+                     span(aria-hidden="true") ×
+                     h4.modal-title#myModalLabel 删除评论
+                 div.modal-body.text-center
+                     p 是否确认删除此评论
+                     div.form-group
+                         button.btn btn-default delbtn del_pd(type="button" data-dismiss="modal") 删除
+                     div.form-group
+                         button.btn btn-default del_pd(type="button" data-dismiss="modal") 关闭
+     //照片全屏弹窗
+     div.modal fade#photoModal(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+         div.box_img_center
+             img(width="100%")
+
+
+script(src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js")
+script(src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js")
+script(src="js/content.js")
+
