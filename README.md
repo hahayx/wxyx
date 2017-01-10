@@ -11,8 +11,7 @@
   * -publish    --最终发布的文件  
   
   * -src        --源代码  
-    *-java  
-    
-    *    -js  
+   * -java  
+   * -js  
     
     
