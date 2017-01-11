@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    |     
+    meta(http-equiv='Expires' content='0')
+    |     
+    meta(name='description' content='哈哈优选提供#{tagName}小程序大全，定期推送好用的#{tagName}微信小程序，识别小程序二维码即可体验！')
+    |     
+    meta(name='keywords' content='#{tagName}小程序,#{tagName}微信小程序,#{tagName}小程序二维码')
+    |     
+    meta(name='applicable-device' content='pc,mobile')
+    |     
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no')
+    |     
+    meta(name='format-detection' content='telephone=no')
+    |     
+    link(href='style/home.css' rel='stylesheet' type='text/css')
+    |     
+    title #{tagName}小程序大全_#{tagName}微信小程序二维码_哈哈优选
+  body#body
+    header
+      h1.title(href='javascript:;') 小程序商店
+    .banner
+      nav
+        for t,n in tMap
+          if t = tid
+            a.active(href='tag-#{n}-1.html') #{tMap[n]}
+          else
+            a(href='tag-#{n}-1.html') #{tMap[n]}
+    .mod-app-container
+      .line
+      |     
+      ul.mod-app-list
+        for d in list
+          li.detailLi(data-appid='#{d.id}')
+            .icon-app
+              img(style='width:52px;height:52px;' src='#{d.icon.image}' alt='#{d.name}')
+            |             
+            .app-content
+              h3 #{d.name}
+              span.appinfo #{d.description}
+              |                 
+              p.c-tx1
+                for tt in d.tag
+                  a(href='tag-#{tt.id}-1.html') #{tt.name}
+            |             
+            a.btn-green(data-code='image/icon-2.png' href='wcx-#{d.id}.html') 打开 
