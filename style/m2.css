@@ -1,10 +1,13 @@
 body {
-    background: #f2f2f2;
+    background: #ffffff;
+    max-width: 750px;
+    margin: 0px auto;
 }
 
 .item_reply {
     background: #ffffff;
     margin-bottom: 20px;
+    border-bottom: 1px solid #9a9baf;
 }
 
 .avatar {
