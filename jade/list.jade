@@ -24,7 +24,7 @@ html
     .banner
       nav
         for t,n in tMap
-          if t = tid
+          if n == tid
             a.active(href='tag-#{n}-1.html') #{tMap[n]}
           else
             a(href='tag-#{n}-1.html') #{tMap[n]}
@@ -45,4 +45,4 @@ html
                 for tt in d.tag
                   a(href='tag-#{tt.id}-1.html') #{tt.name}
             |             
-            a.btn-green(data-code='image/icon-2.png' href='wcx-#{d.id}.html') 打开 
+            a.btn-green(data-code='image/icon-2.png' href='xcx-#{d.id}.html') 打开 
