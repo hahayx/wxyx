@@ -11,6 +11,8 @@ html
     |     
     meta(name='author' content='liguanjian.com')
     |     
+    meta(name='applicable-device' content='pc,mobile')
+    |     
     meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no')
     |     
     meta(name='format-detection' content='telephone=no')
@@ -20,12 +22,12 @@ html
     title 小程序商店 - 微信小程序，精品小程序每日推荐。
   body#body
     header
-      a.title(href='javascript:;')
+      h1.title(href='javascript:;') 小程序商店
       // <a href="javascript:;" class="goupload"><span style="font-size:15px;">+</span>&nbsp;提交</a>
     .banner
       nav
-        a.active(data-cid='0') 全部
-        a(data-cid='1') 富媒体
+        a.active(data-cid='0' href='') 全部
+        a(data-cid='1' href='') 富媒体
         a(data-cid='2') 工具
         a(data-cid='3') 商业
         a(data-cid='4') 公益
@@ -43,6 +45,7 @@ html
         a(data-cid='16') 体育
         a(data-cid='17') 电商
     .mod-app-container
+      // 推荐@duck
       .fixData(style='display: block;')
         .fix_top
           span.star
@@ -80,7 +83,7 @@ html
           a.goods(data-appid='6AqYqJCciF9wel80kO_hVQ')
             img(src='image/icon-2.png')
             p 轻芒杂志
-      |     
+      // end推荐@duck
       .line
       |     
       ul.mod-app-list
