@@ -670,7 +670,7 @@ li:active {
     float: left
 }
 
-.fix_top span.starInfo {
+.fix_top h2.starInfo {
     font-size: 14px;
     color: #999;
     margin-left: 7px;
