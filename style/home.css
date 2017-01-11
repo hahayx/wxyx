@@ -643,7 +643,6 @@ li:active {
 
 .line {
     height: 1px;
-    margin-left: 15px;
     border-style: solid;
     border-width: 0 0 1px;
     border-image: -webkit-linear-gradient(bottom, #efefef, #efefef 50%, transparent 50%, transparent) 100% 1;
@@ -699,3 +698,9 @@ li:active {
 }
 
 .fix_list{text-align: center;}
+
+p.c-tx1 a {
+    display: inline-block;
+    padding-right: 10px;
+    color: #b3b3b4;
+}
