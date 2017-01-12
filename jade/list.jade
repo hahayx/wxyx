@@ -23,6 +23,7 @@ html
       h1.title(href='javascript:;') 小程序商店
     .banner
       nav
+        a(href='/') 首页
         for t,n in tMap
           if n == tid
             a.active(href='tag-#{n}-1.html') #{tMap[n]}
