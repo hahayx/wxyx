@@ -113,16 +113,25 @@ body {
 }
 
 .box_img_center {
-    width:100%;
-    height:100%;
-    position:relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-.box_img_center img{
-    position:absolute;
-    top:50%;
+.box_img_center img {
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
 }
 
+.h1, .h2, .h3, h1, h2, h3 {
+    margin: 0;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.f14 {
+    font-size: 14px;
+}
 
 /*end常用的默认定值*/

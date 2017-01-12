@@ -18,16 +18,17 @@ html
                  br
                  img.avatar.img-rounded.img_size_1(src="#{qrcode.image}")
                  br
-                 h2 微信小程序二维码
+                 h2.col-xs-12.text-center.f14 微信小程序二维码
              div.col-xs-9.pdl0
                  div.col-xs-12.blank10
                  //小程序名
                  b.col-xs-12.text-center #{name}
                  div.col-xs-12.blank10
                  //小程序简介
-                 h2 微信小程序简介
+                 h2.col-xs-12.text-left 微信小程序简介
                  div.col-xs-12.text-justify #{description}
-                 h2 微信小程序截图
+                 div.col-xs-12.blank10
+                 h2.col-xs-12.text-left 微信小程序截图
                  div.col-xs-12.blank10
                  //这里每一个图放一个@duck
                  each i in screenshot
@@ -39,7 +40,9 @@ html
                         a.my_tag.pdl0.text-left(href="tag-#{i.id}-1.html") #{i.name}
                  div.col-xs-12.blank10
          div.col-xs-12
-             img.img-rounded.img_size_1(src="#{qrcode.image}")
+             div.bigqrpart
+                h2.qrh2 微信小程序二维码
+                img.img-rounded.img_size_1.bigQR(src="#{qrcode.image}")
      //弹窗
      div.modal.fade#myModal(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
          div.modal-dialog(role="document")

@@ -82,3 +82,15 @@ body {
     /*padding: 0px 5px 5px 0;*/
     padding:0 15px 30px;
 }
+
+.bigQR{
+    padding: 0 15px;
+}
+.bigqrpart{
+    width: 80%;
+    margin: 0 auto;
+}
+.qrh2{
+    text-align: center;
+    font-size: 24px;
+}
