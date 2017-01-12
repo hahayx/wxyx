@@ -119,9 +119,9 @@ body {
 }
 
 .box_img_center img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
@@ -132,6 +132,10 @@ body {
 
 .f14 {
     font-size: 14px;
+}
+
+.oneline{
+    white-space: nowrap;
 }
 
 /*end常用的默认定值*/
