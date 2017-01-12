@@ -735,3 +735,8 @@ p.c-tx1 a {
     text-decoration: none;
     border: 1px solid #63b830
 }
+
+.link_title{
+    font-weight: 700;
+    line-height: 19px;
+}
