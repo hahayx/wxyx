@@ -704,3 +704,34 @@ p.c-tx1 a {
     padding-right: 10px;
     color: #b3b3b4;
 }
+
+
+.pagination {
+    text-align: center;
+    padding: 10px 0 40px;
+    margin-top: 30px;
+    font-family: Tahoma,Arial;
+    font-size: 14px;
+}
+
+.pagination a,.pagination span {
+    padding: 6px 11px;
+    margin: 0 2px;
+    background: #fff;
+    color: #666;
+    font-family: Tahoma;
+    border: 1px solid #ccc;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+    height: 14px;
+    width: 14px;
+    display:inline-block;
+    line-height:14px;
+}
+
+.pagination .current,.pagination a:hover {
+    background: #63b830;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #63b830
+}
