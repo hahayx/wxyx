@@ -46,3 +46,9 @@ html
                   a(href='tag-#{tt.id}-1.html') #{tt.name}
             |             
             a.btn-green(data-code='image/icon-2.png' href='xcx-#{d.id}.html') 打开 
+      div.pagination
+        for i in arr
+          if i == pn
+            span.current #{i}
+          else
+            a(href='tag-#{tid}-#{i}.html') #{i}
