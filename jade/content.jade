@@ -37,17 +37,12 @@ html
                  div.col-xs-12.my_local
                      //这里代表一个类别@duck
                      each i in tag
-                        a.my_tag.pdl0.text-left(href="tag-#{i.id}-1.html") #{i.name}
+                        a.my_tag.pdl0.text-left(href="http://www.hahayx.com/tag-#{i.id}-1.html") #{i.name}
                  div.col-xs-12.blank10
          div.col-xs-12
-<<<<<<< HEAD
-             h2 微信小程序二维码
-             img.img-rounded.img_size_1(src="#{qrcode.image}")
-=======
              div.bigqrpart
                 h2.qrh2 微信小程序二维码
                 img.img-rounded.img_size_1.bigQR(src="#{qrcode.image}")
->>>>>>> 89f25960512be6792d13948643f3c7fc0b5e5df8
      //弹窗
      div.modal.fade#myModal(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
          div.modal-dialog(role="document")

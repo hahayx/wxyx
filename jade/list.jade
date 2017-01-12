@@ -26,9 +26,9 @@ html
         a(href='/') 首页
         for t,n in tMap
           if n == tid
-            a.active(href='tag-#{n}-1.html') #{tMap[n]}
+            a.active(href='http://www.hahayx.com/tag-#{n}-1.html') #{tMap[n]}
           else
-            a(href='tag-#{n}-1.html') #{tMap[n]}
+            a(href='http://www.hahayx.com/tag-#{n}-1.html') #{tMap[n]}
     .mod-app-container
       .line
       |     
@@ -36,7 +36,7 @@ html
         for d in list
           li.detailLi(data-appid='#{d.id}')
             .icon-app
-              img(style='width:52px;height:52px;' src='#{d.icon.image}' alt='#{d.name}')
+              img(style='width:52px;height:52px;' src='#{d.icon.image}' alt='#{d.name}小程序')
             |             
             .app-content
               h3 #{d.name}
@@ -46,10 +46,10 @@ html
                 for tt in d.tag
                   a(href='tag-#{tt.id}-1.html') #{tt.name}
             |             
-            a.btn-green(data-code='image/icon-2.png' href='xcx-#{d.id}.html') 打开 
+            a.btn-green(data-code='image/icon-2.png' href='http://www.hahayx.com/xcx-#{d.id}.html') 打开 
       div.pagination
         for i in arr
           if i == pn
             span.current #{i}
           else
-            a(href='tag-#{tid}-#{i}.html') #{i}
+            a(href='http://www.hahayx.com/tag-#{tid}-#{i}.html') #{i}
