@@ -1,3 +1,85 @@
-<!DOCTYPE html><html><head><title>深睡大师</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><meta name="description" content="深睡大师微信小程序，微信扫描二维码即可使用！由考拉FM出品的助眠类音频程序&ldquo;深睡大师&rdquo;，集聚了万千催眠好声音，帮你放松熟睡，给你高质量睡眠。
-深睡大师，包括了天籁的大自然音乐、治愈系暖文、优美散文及专家助眠引导等优质内容。每晚收听这些声音，使人心情宁静，轻松地进入睡眠，从而告别失眠、烦躁和抑郁的生活。"><meta name="keywords" content="深睡大师,深睡大师小程序,深睡大师二维码,深睡大师微信小程序"><!--Bootstrap--><link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"><link href="style/css.css" rel="stylesheet"><link href="style/m2.css" rel="stylesheet"></head><body><div class="container-fluid"><div class="row item_reply"><div class="col-xs-3"><img src="https://sso.ifanr.com/media/user_files/trochili/ad/07/ad07087fa027a86abf9402a3534259e6abadb792-3de1c6ad0258927562f01bdef5b470dc475cbbbb.jpg" class="avatar img-rounded img_size_1"><br><img src="https://sso.ifanr.com/media/user_files/trochili/6b/f6/6bf68d96dcf403d6e6546e3d0288632defdecfc1-9bb2573a479086163cbefb5677a0bbcf0943dcf4.jpg" class="avatar img-rounded img_size_1"></div><div class="col-xs-9 pdl0"><div class="col-xs-12 blank10"></div><!--小程序名--><b class="col-xs-12 text-center">深睡大师</b><div class="col-xs-12 blank10"></div><!--小程序简介--><div class="col-xs-12 text-justify">由考拉FM出品的助眠类音频程序&ldquo;深睡大师&rdquo;，集聚了万千催眠好声音，帮你放松熟睡，给你高质量睡眠。
-深睡大师，包括了天籁的大自然音乐、治愈系暖文、优美散文及专家助眠引导等优质内容。每晚收听这些声音，使人心情宁静，轻松地进入睡眠，从而告别失眠、烦躁和抑郁的生活。</div><div class="col-xs-12 blank10"></div><!--这里每一个图放一个@duck--><div class="col-xs-6 descpic text-center"><img src="https://sso.ifanr.com/media/user_files/trochili/bf/e3/bfe37c8f4e3a70bb68d950a189738cf8331338a4-405b5a76cfa886f315e55d4b79628544cf50c067.png" class="img_size_1"></div><div class="col-xs-6 descpic text-center"><img src="https://sso.ifanr.com/media/user_files/trochili/05/59/0559b663a5596601c0621f6a96de266c80c741b5-59f34135d435651577c4fe11b3d160674088a51f.png" class="img_size_1"></div><div class="col-xs-12 my_local"><!--这里代表一个类别@duck--><a href="tag-11-1.html" class="my_tag pdl0 text-left">工具</a><a href="tag-20-1.html" class="my_tag pdl0 text-left">医疗</a><a href="tag-14-1.html" class="my_tag pdl0 text-left">生活服务</a><a href="tag-10-1.html" class="my_tag pdl0 text-left">富媒体</a></div><div class="col-xs-12 blank10"></div></div></div><div class="col-xs-12"><img src="https://sso.ifanr.com/media/user_files/trochili/6b/f6/6bf68d96dcf403d6e6546e3d0288632defdecfc1-9bb2573a479086163cbefb5677a0bbcf0943dcf4.jpg" class="img-rounded img_size_1"></div></div><!--弹窗--><div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade"><div role="document" class="modal-dialog"><div class="modal-content"><div class="modal-header text-center"><button type="button" data-dismiss="modal" aria-label="Close" class="close"></button><span aria-hidden="true">×</span><h4 id="myModalLabel" class="modal-title">删除评论</h4></div><div class="modal-body text-center"><p>是否确认删除此评论</p><div class="form-group"><button class="btn">btn-default delbtn del_pd(type="button" data-dismiss="modal") 删除</button></div><div class="form-group"><button class="btn">btn-default del_pd(type="button" data-dismiss="modal") 关闭</button></div></div></div></div></div><!--照片全屏弹窗--><div id="photoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade"><div class="box_img_center"><img width="100%"></div></div></body></html><script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script><script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script src="js/content.js"></script>
+<!DOCTYPE html>
+<html>
+<head><title>深睡大师</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="深睡大师微信小程序，微信扫描二维码即可使用！由考拉FM出品的助眠类音频程序&ldquo;深睡大师&rdquo;，集聚了万千催眠好声音，帮你放松熟睡，给你高质量睡眠。
+深睡大师，包括了天籁的大自然音乐、治愈系暖文、优美散文及专家助眠引导等优质内容。每晚收听这些声音，使人心情宁静，轻松地进入睡眠，从而告别失眠、烦躁和抑郁的生活。">
+    <meta name="keywords" content="深睡大师,深睡大师小程序,深睡大师二维码,深睡大师微信小程序"><!--Bootstrap-->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style/css.css" rel="stylesheet">
+    <link href="style/m2.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+
+    <div class="header-bar">
+        <div class="icon-back"><a href=""></a></div>
+        <div class="header-title">哈哈优选</div>
+    </div>
+
+    <div class="wap_nav">
+        <div class="wap_nav_list">
+            <div class="wap_navItem "><a href="">首页</a></div>
+            <div class="wap_navItem "><a href="">社交</a></div>
+            <div class="wap_navItem "><a href="">工具</a></div>
+            <div class="wap_navItem "><a href="">生活服务</a></div>
+        </div>
+    </div>
+
+    <div class="row item_reply">
+        <div class="col-xs-3"><img
+                src="https://sso.ifanr.com/media/user_files/trochili/ad/07/ad07087fa027a86abf9402a3534259e6abadb792-3de1c6ad0258927562f01bdef5b470dc475cbbbb.jpg"
+                class="avatar img-rounded img_size_1"><br><img
+                src="https://sso.ifanr.com/media/user_files/trochili/6b/f6/6bf68d96dcf403d6e6546e3d0288632defdecfc1-9bb2573a479086163cbefb5677a0bbcf0943dcf4.jpg"
+                class="avatar img-rounded img_size_1"></div>
+        <div class="col-xs-9 pdl0">
+            <div class="col-xs-12 blank10"></div><!--小程序名--><b class="col-xs-12 text-center">深睡大师</b>
+            <div class="col-xs-12 blank10"></div><!--小程序简介-->
+            <div class="col-xs-12 text-justify">由考拉FM出品的助眠类音频程序&ldquo;深睡大师&rdquo;，集聚了万千催眠好声音，帮你放松熟睡，给你高质量睡眠。
+                深睡大师，包括了天籁的大自然音乐、治愈系暖文、优美散文及专家助眠引导等优质内容。每晚收听这些声音，使人心情宁静，轻松地进入睡眠，从而告别失眠、烦躁和抑郁的生活。
+            </div>
+            <div class="col-xs-12 blank10"></div><!--这里每一个图放一个@duck-->
+            <div class="col-xs-6 descpic text-center"><img
+                    src="https://sso.ifanr.com/media/user_files/trochili/bf/e3/bfe37c8f4e3a70bb68d950a189738cf8331338a4-405b5a76cfa886f315e55d4b79628544cf50c067.png"
+                    class="img_size_1"></div>
+            <div class="col-xs-6 descpic text-center"><img
+                    src="https://sso.ifanr.com/media/user_files/trochili/05/59/0559b663a5596601c0621f6a96de266c80c741b5-59f34135d435651577c4fe11b3d160674088a51f.png"
+                    class="img_size_1"></div>
+            <div class="col-xs-12 my_local"><!--这里代表一个类别@duck--><a href="tag-11-1.html"
+                                                                   class="my_tag pdl0 text-left">工具</a><a
+                    href="tag-20-1.html" class="my_tag pdl0 text-left">医疗</a><a href="tag-14-1.html"
+                                                                                class="my_tag pdl0 text-left">生活服务</a><a
+                    href="tag-10-1.html" class="my_tag pdl0 text-left">富媒体</a></div>
+            <div class="col-xs-12 blank10"></div>
+        </div>
+    </div>
+    <div class="col-xs-12"><img
+            src="https://sso.ifanr.com/media/user_files/trochili/6b/f6/6bf68d96dcf403d6e6546e3d0288632defdecfc1-9bb2573a479086163cbefb5677a0bbcf0943dcf4.jpg"
+            class="img-rounded img_size_1"></div>
+</div><!--弹窗-->
+<div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+    <div role="document" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <button type="button" data-dismiss="modal" aria-label="Close" class="close"></button>
+                <span aria-hidden="true">×</span><h4 id="myModalLabel" class="modal-title">删除评论</h4></div>
+            <div class="modal-body text-center"><p>是否确认删除此评论</p>
+                <div class="form-group">
+                    <button class="btn">btn-default delbtn del_pd(type="button" data-dismiss="modal") 删除</button>
+                </div>
+                <div class="form-group">
+                    <button class="btn">btn-default del_pd(type="button" data-dismiss="modal") 关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--照片全屏弹窗-->
+<div id="photoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+    <div class="box_img_center"><img width="100%"></div>
+</div>
+</body>
+</html>
+<script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/content.js"></script>

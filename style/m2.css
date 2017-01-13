@@ -94,3 +94,80 @@ body {
     text-align: center;
     font-size: 24px;
 }
+
+.header-bar{
+    height: 44px;
+    line-height: 44px;
+    position: relative;
+}
+.icon-back{
+    width: 40px;
+    height: 44px;
+    position: absolute;
+
+}
+.icon-back a{
+    background: url(../image/back.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 12px 0 0 10px;
+    display: block;
+    background-size: contain;
+}
+.header-title{
+    margin: 0 50px;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+}
+
+/*导航*/
+
+.wap_nav{
+    height: 44px;
+    text-align: center;
+    background: #f0f0f1;
+}
+
+.wap_nav_list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    z-index: 2
+}
+
+.wap_navItem:last-child a {
+    border: 0
+}
+
+.wap_navItem--on a {
+    color: #63b830
+}
+
+
+.wap_navItem {
+    width: 25%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.wap_navItem a {
+    display: block;
+    width: 100%;
+    line-height: 1;
+    color: #333;
+    border-right: 1px solid #ccc;
+    text-decoration: none;
+    font-size: 18px;
+}
