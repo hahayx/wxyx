@@ -179,7 +179,7 @@ header h1.title {
     font-size: 18px;
     background: url(../image/logo.png) -14px no-repeat;
     background-size: 180px;
-    margin-top: 4px;
+    /*margin-top: 4px;*/
     cursor: pointer;
     line-height: 44px;
 }
