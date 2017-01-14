@@ -133,12 +133,7 @@ body {
 .wap_nav_list {
     width: 100%;
     height: 100%;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    z-index: 2
+    z-index: 2;
 }
 
 .wap_navItem:last-child a {
@@ -152,24 +147,18 @@ body {
 
 .wap_navItem {
     width: 25%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center
+    display: inline-block;
 }
 
 .wap_navItem a {
     display: block;
-    width: 100%;
-    line-height: 1;
+    width: 98%;
+    line-height: 44px;
     color: #333;
     border-right: 1px solid #ccc;
     text-decoration: none;
     font-size: 18px;
+    margin: 0 auto;
 }
 
 .oneline{
