@@ -746,3 +746,23 @@ p.c-tx1 a {
 .moul>:first-child {
     padding-top: 0
 }
+
+#footer{
+    width:100%;
+    font-family: Candara;
+    color: black;
+    font-size: 12px;
+    margin-top: 50px;
+}
+.cert{margin:0 auto;text-align:center;}
+.cert img{padding-left: 12px;padding-right:5px;}
+.cert *{vertical-align:middle;font-family: Candara;color: black;text-decoration:none;display: inline;}
+#info {
+    font-size: 1em;
+    text-align: center;
+    font-weight: normal;
+    line-height: 2em;
+    vertical-align: top;
+    width: 100%;
+    margin:0;
+}
