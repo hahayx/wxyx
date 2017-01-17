@@ -700,7 +700,7 @@ li:active {
 
 .fix_list{text-align: center;}
 
-p.c-tx1 a {
+p.c-tx1 * {
     display: inline-block;
     padding-right: 10px;
     color: #b3b3b4;
