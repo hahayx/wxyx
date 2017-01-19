@@ -61,52 +61,56 @@ body {
     margin-left: 8px;
 }
 
-.myreplycnt{
+.myreplycnt {
     margin-top: 13%;
     line-height: 26px;
     height: 26px;
 }
 
-.fs28{
+.fs28 {
     font-size: 28px;
 }
 
-.my_tag{
+.my_tag {
     background: lightskyblue;
     padding: 4px 17px;
     margin: 5px 5px 0 0;
     display: inline-block;
 }
 
-.descpic{
+.descpic {
     /*padding: 0px 5px 5px 0;*/
-    padding:0 15px 30px;
+    padding: 0 15px 30px;
 }
 
-.bigQR{
+.bigQR {
     padding: 0 15px;
 }
-.bigqrpart{
+
+.bigqrpart {
     width: 80%;
     margin: 0 auto;
 }
-.qrh2{
+
+.qrh2 {
     text-align: center;
     font-size: 24px;
 }
 
-.header-bar{
+.header-bar {
     height: 44px;
     line-height: 44px;
     position: relative;
 }
-.icon-back{
+
+.icon-back {
     width: 40px;
     height: 44px;
     position: absolute;
 
 }
-.icon-back a{
+
+.icon-back a {
     background: url(../image/back.png) no-repeat;
     width: 20px;
     height: 20px;
@@ -114,7 +118,8 @@ body {
     display: block;
     background-size: contain;
 }
-.header-title{
+
+.header-title {
     margin: 0 50px;
     text-align: center;
     height: 44px;
@@ -124,7 +129,7 @@ body {
 
 /*导航*/
 
-.wap_nav{
+.wap_nav {
     height: 44px;
     text-align: center;
     background: #f0f0f1;
@@ -144,7 +149,6 @@ body {
     color: #63b830
 }
 
-
 .wap_navItem {
     width: 25%;
     display: inline-block;
@@ -161,9 +165,25 @@ body {
     margin: 0 auto;
 }
 
-.oneline{
+.oneline {
     white-space: normal;
 }
+
 @media screen and (max-width: 430px) {
-    .oneline {display: none;}
+    .oneline {
+        display: none;
+    }
+}
+
+.pList {
+    padding: 0;
+    overflow: hidden !important;
+    overflow-x: scroll !important;
+    white-space: nowrap;
+}
+
+.pList img {
+    display: inline-block;
+    width: 49%;
+    margin-right: 2%;
 }
