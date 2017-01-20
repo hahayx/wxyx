@@ -124,7 +124,18 @@ body {
     text-align: center;
     height: 44px;
     line-height: 44px;
-    font-size: 16px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-title::before{
+    content: " ";
+    width: 20px;
+    height: 20px;
+    background: url(../image/40.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
 }
 
 /*导航*/
@@ -152,6 +163,7 @@ body {
 .wap_navItem {
     width: 25%;
     display: inline-block;
+    box-shadow: 1px 1px 12px 2px rgba(255,255,255,.3);
 }
 
 .wap_navItem a {
@@ -186,4 +198,46 @@ body {
     display: inline-block;
     width: 49%;
     margin-right: 2%;
+}
+
+.pList img:last-child{
+    margin-right: 0;
+}
+
+.b_title{
+    font-size: 16px;
+}
+
+.chunk{margin-bottom: 4px;}
+.chunk::before{
+    content: "\2000";
+    border-left: 2px solid #63b830;
+}
+
+.section_p{
+    font-family: '微软雅黑';
+    color: #6b6f67;
+}
+.my_local *{
+    color: white;
+}
+.my_local>:nth-child(4n+0)
+{
+    border-left: 3px solid #0080ff;
+    background-color: #39F;
+}
+.my_local>:nth-child(4n+1)
+{
+    border-left: 3px solid #f33;
+    background-color: #F66;
+}
+.my_local>:nth-child(4n+2)
+{
+    border-left: 3px solid #ff8000;
+    background-color: #F93;
+}
+.my_local>:nth-child(4n+3)
+{
+    border-left: 3px solid #b366ff;
+    background-color: #C9F;
 }

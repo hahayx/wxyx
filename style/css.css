@@ -65,7 +65,9 @@ body {
 /*常用的默认定值*/
 .pdl0 {
     padding-left: 0;
+    padding-right: 0;
 }
+
 
 .pd10-top {
     padding-top: 10px;

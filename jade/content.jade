@@ -40,19 +40,20 @@ html
              div.col-xs-9.pdl0
                  div.col-xs-12.blank10
                  //小程序名
-                 b.col-xs-12.text-center #{name}
+                 b.col-xs-12.text-center.b_title #{name}
                  div.col-xs-12.blank10
                  //小程序简介
-                 h2.col-xs-12.text-left 微信小程序简介
+                 h2.col-xs-12.text-left.chunk 微信小程序简介
                  div.col-xs-12.text-justify #{description}
                  div.col-xs-12.blank10
-                 h2.col-xs-12.text-left 微信小程序截图
-                 div.col-xs-12.blank10
+                 h2.col-xs-12.text-left.chunk 微信小程序截图
                  //这里每一个图放一个@duck
                  div.col-xs-12
                      div.descpic.pList
                         each i in screenshot
                           img.img_size_1(src="#{i.image}")
+                 div.col-xs-12.blank10
+                 h2.col-xs-12.text-left.chunk 微信小程序类别
                  div.col-xs-12.my_local
                      //这里代表一个类别@duck
                      each i in tag
